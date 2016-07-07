@@ -26,6 +26,10 @@ public class Fragment1 extends Fragment {
         // adapter = new IconTextListAdapter(this);
         adapter = new IconTextListAdapter(rootView.getContext());
 
+
+
+
+        
         // 아이템 데이터 만들기
         Resources res = getResources();
         adapter.addItem(new org.androidtown.ui.listview.IconTextItem(res.getDrawable(R.drawable.icon05), "추억의 테트리스", "30,000 다운로드", "900 원"));
