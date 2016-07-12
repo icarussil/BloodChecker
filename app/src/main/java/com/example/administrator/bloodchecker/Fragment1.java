@@ -26,10 +26,6 @@ public class Fragment1 extends Fragment {
         // adapter = new IconTextListAdapter(this);
         adapter = new IconTextListAdapter(rootView.getContext());
 
-
-
-
-        
         // 아이템 데이터 만들기
         Resources res = getResources();
         adapter.addItem(new org.androidtown.ui.listview.IconTextItem(res.getDrawable(R.drawable.icon05), "추억의 테트리스", "30,000 다운로드", "900 원"));
@@ -54,12 +50,10 @@ public class Fragment1 extends Fragment {
                 org.androidtown.ui.listview.IconTextItem curItem = (org.androidtown.ui.listview.IconTextItem) adapter.getItem(position);
                 String[] curData = curItem.getData();
 
-                // error fix
-                // Toast.makeText(getApplicationContext(), "Selected : " + curData[0], Toast.LENGTH_LONG).show();
+                 Toast.makeText(getActivity().getApplicationContext(), "Selected : " + curData[0], Toast.LENGTH_LONG).show();
             }
 
         });
-
 
         return rootView;
     }
